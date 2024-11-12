@@ -13,10 +13,10 @@ function Counter() {
   };
 
   useEffect(() => {
-    console.log(`Counter updated: ${count}`);
+    alert(`Counter updated: ${count}`);
 
     return () => {
-      console.log(`Cleanup for count: ${count}`);
+      alert(`Cleanup for count: ${count}`);
     };
   }, [count]);
 
